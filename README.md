@@ -1,8 +1,5 @@
 # GitHub Profile Analyzer API
 
-## Overview
-This project analyzes GitHub user profiles using the GitHub Public API and stores useful insights in MySQL.
-
 ## Tech Stack
 - Node.js
 - Express.js
@@ -11,16 +8,16 @@ This project analyzes GitHub user profiles using the GitHub Public API and store
 
 ## Features
 - Analyze GitHub profile by username
-- Store profile data in MySQL
-- Get all analyzed profiles
-- Get single profile by ID
+- Store profile insights in MySQL
+- Fetch all analyzed profiles
+- Fetch single profile by ID
 
 ## API Endpoints
 
 ### Analyze Profile
 POST /api/profile/analyze
 
-Request:
+Body:
 {
   "username": "torvalds"
 }
@@ -31,7 +28,7 @@ GET /api/profile
 ### Get Single Profile
 GET /api/profile/:id
 
-## Setup
+## Installation
 
 npm install
 
@@ -40,7 +37,7 @@ Create .env file:
 PORT=5000
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=your_password
+DB_PASSWORD=yourpassword
 DB_NAME=github_analyzer
 
 Run:
